@@ -29,7 +29,7 @@ def selection_sort(nums):
         for j in range(i+1, len(nums)):
             if nums[j] < nums[lowest_value_index]:
                 lowest_value_index = j
-                nums[i], nums[lowest_value_index] = nums[lowest_value_index], nums[i]
+        nums[i], nums[lowest_value_index] = nums[lowest_value_index], nums[i]
 
 list_of_nums = eval(input())
 selection_sort(list_of_nums)
